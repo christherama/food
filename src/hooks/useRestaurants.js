@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import yelp from '../api/yelp';
 
 export default () => {
-    const [restaurants, setRestaurants] = useState('');
+    const [restaurants, setRestaurants] = useState([]);
     const [errorMessage, setErrorMessage] = useState('');
 
     const search = (searchTerm) => {
